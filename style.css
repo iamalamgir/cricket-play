@@ -1,0 +1,29 @@
+/*****Cricket-Play*****/
+body{
+    background: #fff;
+}
+
+.bat{
+    transition: transform .2s ease-in-out;
+}
+
+.ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: 650px;
+    top: 100px;
+    transition: transform 2s ease-in .1s;
+}
+
+.cricket-box:hover .bat{
+    transform:translateX(100px);
+    transform-origin: 100% 0%;
+    transform: rotate(-60deg);
+}
+
+.cricket-box:hover .ball{
+    transform: translate(1000px, -200px);
+}
